@@ -39,6 +39,10 @@ app.post('/api/products', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) =>{
+    res.send ('servidor funcionando correctamente');
+});
+
 // Iniciar el servidor
 const PORT = 5000;
 app.listen(PORT, () => {
